@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Replecate</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="script.js"></script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<body>
+
+  <nav class="navbar fixed-top" style="background-color: #2e2e38">
+    <nav class="navbar nav-navbar navbar-expand-md d-flex align-items-center">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 113 55"
+            style="enable-background:new 0 0 113 55;" xml:space="preserve">
+            <clipPath id="ey-logo-first-line">
+              <rect x="42" y="36" width="0" height="10"></rect>
+            </clipPath>
+            <clipPath id="ey-logo-second-line">
+              <rect x="42" y="46" width="0" height="10"></rect>
+            </clipPath>
+            <polygon class="ey-logo-yellow" points="51.2,0 0,19.3 0,19.3 51.2,10 "></polygon>
+            <polygon points="34.3,27 30,35.5 25.6,27 17,27 26.1,42.7 26.1,52.9 33.8,52.9 33.8,42.7 42.8,27 "></polygon>
+            <polygon
+              points="7.7,42.7 17,42.7 17,37.3 7.7,37.3 7.7,33 18,33 14.6,27 0,27 0,52.9 20.6,52.9 20.6,47 7.7,47 ">
+            </polygon>
+            <g clip-path="url(#ey-logo-second-line)">
+              <path
+                d="M99.8,51.9c-0.4,0-0.9-0.3-0.9-1.6c0-1.2,0.5-1.4,0.9-1.4c0.5,0,0.7,0.3,0.9,0.5v2C100.5,51.7,100.2,51.9,99.8,51.9z M100.7,48.3c-0.3-0.3-0.7-0.5-1.1-0.5c-1.2,0-2,1-2,2.6c0,1.7,0.7,2.7,1.9,2.7c0.4,0,0.8-0.2,1.1-0.5V53h1.2v-7.1l-1.2,0.6L100.7,48.3L100.7,48.3z">
+              </path>
+              <polygon points="95.5,46.4 96.7,45.8 96.7,48.4 96.7,53 95.5,53 "></polygon>
+              <path
+                d="M94.6,49.3C94.3,49.2,94,49,93.7,49c-0.6,0-0.9,0.4-0.9,1.2V53h-1.2v-5h1.2v0.4c0.3-0.4,0.7-0.5,1.1-0.5c0.3,0,0.7,0.1,0.9,0.3L94.6,49.3z">
+              </path>
+              <path
+                d="M88.6,51.9c-0.6,0-1-0.6-1-1.5s0.4-1.5,1-1.5s1,0.6,1,1.5C89.6,51.3,89.2,51.9,88.6,51.9z M88.6,47.8c-1.3,0-2.3,1.1-2.3,2.6s1,2.6,2.3,2.6s2.3-1.1,2.3-2.6C90.8,48.9,89.9,47.8,88.6,47.8z">
+              </path>
+              <path
+                d="M84.8,47.9H86l-1.4,5h-1.1l-0.5-2c-0.1-0.4-0.2-0.8-0.3-1.1c0,0.2-0.2,0.8-0.3,1.1L81.9,53h-1.1l0,0l-1.4-5h1.3l0.5,1.9c0.1,0.3,0.2,0.9,0.3,1.2c0.1-0.4,0.2-0.9,0.3-1.3l0.5-1.9h1.1l0.5,1.9c0.1,0.3,0.2,0.9,0.3,1.3c0.1-0.3,0.2-0.8,0.3-1.3L84.8,47.9z">
+              </path>
+              <path
+                d="M75.2,49.4v2c-0.2,0.3-0.4,0.5-0.9,0.5c-0.4,0-0.9-0.3-0.9-1.6c0-1.2,0.5-1.4,0.9-1.4C74.8,48.9,75.1,49.2,75.2,49.4z M75.2,48.3c-0.3-0.3-0.7-0.5-1.1-0.5c-1.2,0-2,1-2,2.6c0,1.7,0.7,2.7,1.9,2.7c0.4,0,0.8-0.2,1.1-0.5v0.1c0,0.6,0,1.3-1.6,1.3h-0.1l0.4,1l0,0c1.6,0,2.4-0.8,2.4-2.5v-4.6H75v0.4H75.2z">
+              </path>
+              <path
+                d="M68.2,53H67v-5h1.2v0.4c0.3-0.3,0.7-0.5,1.3-0.5c1.2,0,1.8,0.8,1.8,2.3V53h-1.2v-2.8c0-0.8-0.3-1.2-0.9-1.2s-0.9,0.4-0.9,1.2V53H68.2z">
+              </path>
+              <polygon points="65.9,46.6 65.9,47.2 64.7,47.2 64.7,46 65.9,46 "></polygon>
+              <polygon points="64.6,47.9 65.8,47.9 65.8,50.1 65.8,53 64.6,53 "></polygon>
+              <path
+                d="M62.3,49.6l1.5,3.4h-1.4l-1.1-2.3l-0.7,0.8V53h-1.2v-6.5l1.2-0.6v4c0.2-0.2,0.3-0.5,0.5-0.6l1-1.3h1.4L62.3,49.6z">
+              </path>
+              <path
+                d="M58.7,49.3c-0.2-0.2-0.5-0.3-0.8-0.3c-0.6,0-0.9,0.4-0.9,1.2V53h-1.2v-5H57v0.4c0.3-0.4,0.7-0.5,1.1-0.5c0.3,0,0.7,0.1,0.9,0.3L58.7,49.3z">
+              </path>
+              <path
+                d="M52.7,51.9c-0.6,0-1-0.6-1-1.5s0.4-1.5,1-1.5s1,0.6,1,1.5C53.7,51.3,53.3,51.9,52.7,51.9z M52.7,47.8c-1.3,0-2.3,1.1-2.3,2.6s1,2.6,2.3,2.6s2.3-1.1,2.3-2.6C55,48.9,54,47.8,52.7,47.8z">
+              </path>
+              <path
+                d="M48.9,47.9h1.2l-1.4,5h-1.1L47,50.8c-0.1-0.4-0.2-0.8-0.3-1.1c0,0.2-0.2,0.8-0.3,1.1L46,52.9h-1l-1.4-5h1.3l0.5,1.9c0.1,0.3,0.2,0.9,0.3,1.2c0.1-0.4,0.2-0.9,0.3-1.3l0.5-1.9h1.1l0.5,1.9c0.1,0.3,0.2,0.9,0.3,1.3c0.1-0.3,0.2-0.8,0.3-1.3L48.9,47.9z">
+              </path>
+            </g>
+            <g clip-path="url(#ey-logo-first-line)">
+              <path
+                d="M112.7,40.5c-0.2-0.2-0.5-0.3-0.8-0.3c-0.6,0-0.9,0.4-0.9,1.2v2.7h-1.2v-5h1.2v0.4c0.3-0.4,0.7-0.5,1.1-0.5c0.3,0,0.7,0.1,0.9,0.3L112.7,40.5z">
+              </path>
+              <path
+                d="M105.9,41.1c0-0.6,0.4-1,0.9-1c0.7,0,0.9,0.5,0.9,1H105.9z M107.9,42.7c-0.2,0.2-0.5,0.4-1,0.4c-0.2,0-1-0.1-1.1-1.1h3.1c0-0.1,0-0.3,0-0.4c0-1.6-0.8-2.6-2.1-2.6c-1.3,0-2.2,1.1-2.2,2.6c0,1.6,0.9,2.6,2.4,2.6c0.7,0,1.3-0.3,1.8-0.8L107.9,42.7z">
+              </path>
+              <path
+                d="M102.9,42.4c0,0.4,0.2,0.7,0.5,0.7s0.5-0.1,0.7-0.2L104,44c-0.3,0.2-0.6,0.2-1,0.2c-1,0-1.3-0.8-1.3-1.5v-2.4h-0.8v-1.2h0.8v-1.3l1.2-0.6v1.9h1.1v1.2h-1.1C102.9,40.3,102.9,42.4,102.9,42.4z">
+              </path>
+              <path
+                d="M100.5,44c-0.3,0.2-0.6,0.2-1,0.2c-1,0-1.3-0.8-1.3-1.5v-2.4h-0.8v-1.2h0.8v-1.3l1.2-0.6v1.9h1.1v1.2h-1.1v2.1c0,0.4,0.2,0.7,0.5,0.7s0.5-0.1,0.7-0.2L100.5,44z">
+              </path>
+              <path
+                d="M93.9,41.1c0-0.6,0.4-1,0.9-1c0.7,0,0.9,0.5,0.9,1H93.9z M96,42.7c-0.2,0.2-0.5,0.4-1,0.4c-0.2,0-1.1-0.1-1.1-1.1H97c0-0.1,0-0.3,0-0.4c0-1.6-0.8-2.6-2.1-2.6c-1.3,0-2.2,1.1-2.2,2.6c0,1.6,0.9,2.6,2.4,2.6c0.7,0,1.3-0.3,1.8-0.8L96,42.7z">
+              </path>
+              <path
+                d="M89.9,40.1c0.5,0,0.9,0.4,0.9,1.4s-0.3,1.6-0.9,1.6c-0.5,0-0.8-0.3-0.9-0.5v-2C89.2,40.3,89.5,40.1,89.9,40.1z M90.1,39c-0.4,0-0.8,0.2-1.1,0.5v-2.3l-1.2,0.6v6.4H89v-0.4c0.3,0.3,0.7,0.5,1.1,0.5c1.2,0,1.9-1,1.9-2.7C92.1,40,91.3,39,90.1,39z">
+              </path>
+              <path
+                d="M81.5,42.5c0-0.4,0.3-0.7,0.9-0.7c0.4,0,0.7,0.1,1,0.2v0.7c-0.2,0.3-0.5,0.5-1,0.5C81.8,43.2,81.5,42.9,81.5,42.5z M81.1,40.3c0.4-0.2,0.8-0.3,1.3-0.3c0.6,0,0.9,0.2,0.9,0.7V41c-0.3-0.1-0.7-0.2-1.1-0.2c-0.9,0-2,0.4-2,1.7s1,1.8,1.9,1.8c0.4,0,0.9-0.1,1.2-0.5v0.4h1.2v-3.4c0-1.1-0.8-1.7-2-1.7c-0.7,0-1.3,0.2-1.9,0.5L81.1,40.3z">
+              </path>
+              <path
+                d="M76,40.6v2c-0.2,0.3-0.4,0.5-0.9,0.5c-0.4,0-0.9-0.3-0.9-1.6c0-1.2,0.5-1.4,0.9-1.4C75.6,40.1,75.9,40.4,76,40.6z M76,39.5c-0.3-0.3-0.7-0.5-1.1-0.5c-1.2,0-2,1-2,2.6c0,1.7,0.7,2.7,1.9,2.7c0.4,0,0.8-0.2,1.1-0.5v0.1c0,0.6,0,1.3-1.6,1.3h-0.1l0.4,1l0,0c1.6,0,2.4-0.9,2.4-2.5v-4.6h-1C76,39.1,76,39.5,76,39.5z">
+              </path>
+              <path
+                d="M69.1,44.1h-1.2v-5h1.2v0.4c0.3-0.3,0.7-0.5,1.3-0.5c1.2,0,1.8,0.8,1.8,2.3v2.8H71v-2.8c0-0.8-0.3-1.2-0.9-1.2s-0.9,0.4-0.9,1.2L69.1,44.1L69.1,44.1z">
+              </path>
+              <polygon points="66.7,37.8 66.7,38.4 65.5,38.4 65.5,37.2 66.7,37.2 "></polygon>
+              <polygon points="65.5,39.1 66.7,39.1 66.7,40.7 66.7,44.1 65.5,44.1 "></polygon>
+              <path
+                d="M62.3,43.1c-0.4,0-0.9-0.3-0.9-1.6c0-1.2,0.5-1.4,0.9-1.4c0.5,0,0.7,0.3,0.9,0.5v2C62.9,42.9,62.7,43.1,62.3,43.1z M63.1,39.5C62.8,39.2,62.4,39,62,39c-1.2,0-2,1-2,2.6c0,1.7,0.7,2.7,1.9,2.7c0.4,0,0.8-0.2,1.1-0.5v0.4h1.2V37L63,37.6L63.1,39.5L63.1,39.5z">
+              </path>
+              <polygon points="58,37.6 59.2,37 59.2,40.8 59.2,44.2 58,44.2 "></polygon>
+              <polygon points="56.9,37.8 56.9,38.4 55.7,38.4 55.7,37.2 56.9,37.2 "></polygon>
+              <polygon points="56.9,40.9 56.9,44.2 55.7,44.2 55.7,39.2 56.9,39.2 "></polygon>
+              <path
+                d="M50.2,42v-2.8h1.2V42c0,0.8,0.3,1.2,0.9,1.2c0.6,0,0.9-0.4,0.9-1.2v-2.8h1.2v5h-1.2v-0.4c-0.3,0.3-0.7,0.5-1.2,0.5C50.4,44.3,50.2,42.8,50.2,42z">
+              </path>
+              <path
+                d="M46.9,39.9h-1.6v-1.5h1.5c0.6,0,0.9,0.2,0.9,0.7C47.8,39.5,47.6,39.9,46.9,39.9z M46.9,43h-1.6v-2h1.6c0.7,0,1,0.3,1,1C48,42.6,47.6,43,46.9,43z M49.3,41.9c0-1-0.7-1.4-1-1.5c0.5-0.3,0.8-0.8,0.8-1.4c0-1.1-0.8-1.8-2.1-1.8h-3v6.9h2.9C48.4,44.1,49.3,43.3,49.3,41.9z">
+              </path>
+            </g>
+          </svg>
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#">Insight</a>
+            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="#">Industries</a>
+            <a class="nav-link" href="#">Careers</a>
+          </div>
+
+          <div class="navbar-nav nav-svg ms-auto">
+            <a class="nav-link" href="#">
+              <i><svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M505 442.7 405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
+                </svg></i>
+              Search
+            </a>
+            <a class="nav-link" href="#">
+              <i><svg width="200" height="200" viewBox="0 0 200 200" data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m169 170.71-2-4a73.78 73.78 0 0 0-31-32 66.14 66.14 0 0 0 29-54.5 65 65 0 1 0-101 54 73.78 73.78 0 0 0-31 32l-2 4a10.06 10.06 0 0 0 18 9l2-4a55 55 0 0 1 98 0l2 4a10 10 0 0 0 13.5 4.5c5-2 7-8 4.5-13ZM55 80.21a45 45 0 1 1 45 45 44.81 44.81 0 0 1-45-45Z" />
+                </svg></i>
+              Industries</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="#2e2e38" stroke-width="2"
+                      d="M12 23c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11Zm0 0c3 0 4-5 4-11S15 1 12 1 8 6 8 12s1 11 4 11ZM2 16h20M2 8h20" />
+                  </svg></i>
+                Dropdown
+              </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </nav>
+
+
+
+
+  <main class="hero">
+
+    <div class="banner">
+      <div class="banner-items">
+        <p>Economy Watch</p>
+        <h1>How India can strengthen its economic <br> resilinece against global and domestic <h1> Shock</p>
+      </div>
+      <img src="images/manuel-mnvx-dV_Blc0bols-unsplash.jpg" alt="">
+
+    </div>
+
+  </main>
+
+
+
+
+  <section class="feature">
+
+    <div class="info">
+      <div class="card-tag">
+        <h2>Featured insights</h2>
+      </div>
+
+
+      <div class="row cards">
+        <div class="card card1  col-sm-12  col-md-4 col-lg-4 bg-transparent border-0">
+          <a href="#"><img src="images/card1.jpg" alt=""></a>
+          <p>How are bank pacing for the new wave in banking?</p>
+          <p>Read more</p>
+        </div>
+        <div class="card card2  col-sm-12  col-md-4 col-lg-4 bg-transparent border-0">
+          <a href="#"><img src="images/card2.jpg" alt=""></a>
+          <p>How are bank pacing for the new wave in banking?</p>
+          <p>Read more</p>
+        </div>
+        <div class="card card3  col-sm-12  col-md-4 col-lg-4 bg-transparent border-0">
+          <a href="#"><img src="images/card3.jpg" alt=""></a>
+          <p>How are bank pacing for the new wave in banking?</p>
+          <p>Read more</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <article class="podcast fadein">
+
+    <div class="detail">
+
+      <div class="box">
+        <div class="boxn image-responsive">
+          <img src="images/detail.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+
+  </article>
+
+  <section class="thinking">
+
+    <div class="think-tag">
+      <h2>Our Latest Thinking</h2>
+    </div>
+
+    <div class="row">
+
+      <div class="card think-card col-sm-12 col-md-6 col-lg-4 border-0 fadein">
+        <img src="images/think-box-1.jpg" class="card-img-top img-responsive" alt="...">
+        <div class="card-body">
+          <p class="card-text">How are GCC pioneering new ground while uploading their Legacy?</p>
+          <p>New-age GCCs are increasingly adopting certain leading attributes to deliver strategic value to
+            organizations</p>
+          <br>
+          <p>21 Nov 2021 |<span class="author"> Arindam Sen</span></p>
+        </div>
+      </div>
+
+      <div class="card think-card col-sm-12 col-md-6 col-lg-4 border-0 fadein">
+        <img src="images/think-box-2.jpg" class="card-img-top img-responsive" alt="...">
+        <div class="card-body">
+          <p class="card-text">The dawn of the space economy in India</p>
+          <p>The space economy in India is set to grow to US$13b by 2025 at a CAGR of 6%</p> <br> <br> <br>
+          <p>4 Nov 2021 |<span class="author"> Prasanth signal</span></p>
+        </div>
+      </div>
+
+      <div class="card think-card col-sm-12 col-md-6 col-lg-4 border-0 fadein">
+        <img src="images/think-box-3.jpg" class="card-img-top img-responsive" alt="...">
+        <div class="card-body">
+          <p class="card-text">How can GCCs drive the ESG agenda in your organization?</p>
+          <p>Housing a central ESG function within a GCC gives it the right platform to transform and expand in scope.
+            This enables it to play a dominant role in the…</p><br><br>
+          <p>3 Nov 2021 |<span class="author"> Kunal Gatak</span></p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- mm -->
+
+  <section class="thinking">
+
+
+
+    <div class="think-tag">
+      <h2>Our Client Case Studies</h2>
+    </div>
+
+    <div class="row">
+
+      <div class="card  think-card col-sm-12 col-md-6 col-lg-4 border-0 fadein">
+        <img src="images/think-box-4.jpg" class="card-img-top img-responsive" alt="...">
+        <div class="card-body">
+          <p class="card-text">How are GCC pioneering new ground while uploading their Legacy?</p>
+          <p>New-age GCCs are increasingly adopting certain leading attributes to deliver strategic value to
+            organizations</p>
+          <br>
+          <p>21 Nov 2021 |<span class="author"> Arindam Sen</span></p>
+        </div>
+      </div>
+
+      <div class="card  think-card col-sm-12 col-md-6 col-lg-4 border-0 fadein">
+        <img src="images/think-box-5.jpg" class="card-img-top img-responsive" alt="...">
+        <div class="card-body">
+          <p class="card-text">The dawn of the space economy in India</p>
+          <p>The space economy in India is set to grow to US$13b by 2025 at a CAGR of 6%</p> <br> <br>
+          <p>4 Nov 2021 |<span class="author"> Prasanth signal</span></p><br>
+        </div>
+      </div>
+
+      <div class="card  think-card col-sm-12 col-md-6 col-lg-4 border-0 fadein">
+        <img src="images/think-box-6.jpg" class="card-img-top img-responsive" alt="...">
+        <div class="card-body">
+          <p class="card-text">How can GCCs drive the ESG agenda in your organization?</p>
+          <p>Housing a central ESG function within a GCC gives it the right platform to transform and expand in scope.
+            This enables it to play a dominant role in the…</p><br><br>
+          <p>3 Nov 2021 |<span class="author"> Kunal Gatak</span></p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="cta">
+
+    <a href="#">Explore More Case Studies</a>
+
+  </section>
+
+  <section class="subscribe">
+
+    <div class="subs">
+
+      <div class="content">
+        <h2>Direct to your inbox</h2>
+        <p>Stay up to date with our Editor's Picks newsletter. </p>
+      </div>
+
+      <div class="cta">
+        <a href="#">Subscribe</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="thinking">
+
+
+
+    <div class="think-tag">
+      <h2>Our Client Case Studies</h2>
+    </div>
+
+    <div class="row">
+
+      <div class="card think-card col-sm-12 col-md-6 col-lg-4 border-0 fadein">
+        <img src="images/think-box-7.jpg" class="card-img-top img-responsive" alt="...">
+        <div class="card-body">
+          <p class="card-text">How are GCC pioneering new ground while uploading their Legacy?</p>
+          <p>New-age GCCs are increasingly adopting certain leading attributes to deliver strategic value to
+            organizations</p>
+          <br>
+          <p>21 Nov 2021 |<span class="author"> Arindam Sen</span></p>
+        </div>
+      </div>
+
+      <div class="card think-card col-sm-12 col-md-6 col-lg-4 border-0 fadein">
+        <img src="images/think-box-8.jpg" class="card-img-top img-responsive" alt="...">
+        <div class="card-body">
+          <p class="card-text">The dawn of the space economy in India</p>
+          <p>The space economy in India is set to grow to US$13b by 2025 at a CAGR of 6%</p> <br> <br>
+          <p>4 Nov 2021 |<span class="author"> Prasanth signal</span></p><br><br><br>
+        </div>
+      </div>
+
+
+      <div class="information col-sm-12 col-md-12 col-lg-4 fadein">
+
+        <p>More press release</p>
+
+        <div class="detail col-sm-12 col-md-12 col-lg-12">
+
+          <a href="#">Women's representation on Indian Boards has tripled in 10 years: EY Report</a>
+
+          <p>16 Oct 2022</p>
+
+        </div>
+
+        <div class="detail col-sm-12 col-md-12 col-lg-12">
+
+          <a href="#">Women's representation on Indian Boards has tripled in 10 years: EY Report</a>
+
+          <p>17 Oct 2022</p>
+
+        </div>
+
+        <div class="detail col-sm-12 col-md-12 col-lg-12">
+
+          <a href="#">Women's representation on Indian Boards has tripled in 10 years: EY Report</a>
+
+          <p>19 Sep 2022</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+
+  <div class="cta">
+    <a href="#">Visit The Newsroom</a>
+  </div>
+
+  <section class="share">
+
+    <div class="contact">
+      <div class="con">
+        <path><svg width="35" height="35" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#1DA1F2" fill-rule="evenodd"
+              d="M24 4.309a9.83 9.83 0 0 1-2.828.775 4.94 4.94 0 0 0 2.165-2.724 9.865 9.865 0 0 1-3.127 1.196 4.925 4.925 0 0 0-8.39 4.49A13.974 13.974 0 0 1 1.671 2.9a4.902 4.902 0 0 0-.667 2.476c0 1.708.869 3.216 2.191 4.099A4.936 4.936 0 0 1 .964 8.86v.06a4.926 4.926 0 0 0 3.95 4.829 4.964 4.964 0 0 1-2.224.085 4.93 4.93 0 0 0 4.6 3.42 9.886 9.886 0 0 1-6.115 2.107c-.398 0-.79-.023-1.175-.068a13.945 13.945 0 0 0 7.548 2.212c9.057 0 14.009-7.503 14.009-14.01 0-.213-.005-.425-.014-.636A10.012 10.012 0 0 0 24 4.309" />
+          </svg></path>
+      </div>
+      <h3>Join EY in conversation</h3>
+    </div>
+
+    <div class="loc">
+      <p>@EY_India | 4h</p>
+    </div>
+
+    <div class="contest">
+      <h1>This Wednesday, 23 November, tune in to listen to Saunak Saha as he deliberates on India Inc’s commitment to…
+      </h1>
+      <h1>http:replecate_html_website</h1>
+    </div>
+
+  </section>
+
+  <section class="discover">
+
+    <div class="nav-links">
+      <div class="row d-flex justify-content-between">
+        <div class="dm col-sm-12 col-md-6 col-lg-6">
+          <h2>Discover more</h2>
+
+          <div class="ctan">
+            <a href="#">
+              <path><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.512 4.439c-3.908 0-7.073 3.164-7.073 7.064s3.165 7.063 7.073 7.063c1.95 0 3.713-.786 4.994-2.06a7.033 7.033 0 0 0 2.08-5.003c0-3.9-3.166-7.064-7.074-7.064ZM2 11.503C2 6.253 6.26 2 11.512 2c5.252 0 9.512 4.253 9.512 9.503a9.46 9.46 0 0 1-1.987 5.813l2.605 2.602a1.22 1.22 0 1 1-1.723 1.725l-2.61-2.606a9.481 9.481 0 0 1-5.797 1.968C6.26 21.005 2 16.752 2 11.503Z"
+                    fill="#2e2e38" />
+                </svg></path> EY Search
+            </a>
+          </div>
+
+        </div>
+
+        <div class="popular-dm col-sm-12 col-md-4 col-lg-5 d-flex justify-content-center">
+
+          <div class="popular-links">
+            <p>Popular Quick links</p>
+          </div>
+
+          <div class="cta2">
+            <a href="#">Careers</a>
+            <a href="#">Technology</a>
+            <a href="#">Tax</a>
+            <a href="#">Strategy</a>
+            <a href="#">Case Studies</a>
+            <a href="#">Sustainability</a>
+            <a href="#">IPO</a>
+            <a href="#">Digital</a>
+            <a href="#">Managed services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="insight">
+    <!-- <div class="row g-0">
+      <div class="inbox col-sm-6 col-md-6 col-lg-6">
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6">
+        <a href="#">
+          <div class="inbox-n d-flex">
+            <div class="inbox-in d-inline">
+              <p>Next</p>
+              <h2>Insight</h2>
+            </div>
+            <div class="inbox-vec">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.506 3.436a.75.75 0 0 1 1.058.07l7 8a.75.75 0 0 1 0 .988l-7 8a.75.75 0 1 1-1.128-.988l5.911-6.756H4a.75.75 0 0 1 0-1.5h14.347l-5.911-6.756a.75.75 0 0 1 .07-1.058Z" fill="#030D45"/></svg>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div> -->
+
+    <div class="inbox">
+      <div class="row">
+        <a href="">
+          <div class="inbox-n col-6 offset-6 border-left border-1">
+            <div class="inbox-in">
+              <p>Next</p>
+              <h2>Insight</h2>
+            </div>
+            <div class="inbox-vec">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.506 3.436a.75.75 0 0 1 1.058.07l7 8a.75.75 0 0 1 0 .988l-7 8a.75.75 0 1 1-1.128-.988l5.911-6.756H4a.75.75 0 0 1 0-1.5h14.347l-5.911-6.756a.75.75 0 0 1 .07-1.058Z"
+                  fill="#030D45" />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+  <footer>
+    <div class="row d-flex align-items-center">
+
+      <div class="foot-logo col-xs-12 col-sm-2 col-md-4 col-lg-4">
+        <img src="images/logo.svg" alt="">
+      </div>
+      <div class="foot-links col-xs-12 col-sm-12 col-md-8 col-lg-8 ms-auto text-end">
+        <ul>
+          <li> <a href="#">Contact with US</a></li>
+          <li> <a href="#">Our Locaton</a></li>
+          <li> <a href="#">My EY</a></li>
+          <li> <a href="#">Site map</a></li>
+          <li> <a href="#">Legal and privacy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="foot-text col-sm-12 col-md-12 col-lg-7">
+        <p>EY refers to the global organization, and may refer to one or more, of the member firms of Ernst & Young
+          Global Limited, each of which is a separate legal entity. Ernst & Young Global Limited, a UK company limited
+          by guarantee, does not provide services to clients.</p>
+      </div>
+      <div class="d-flex foot-social col-sm-12 col-md-12 col-lg-5 justify-content-end align-items-center">
+
+        <ul>
+          <a href="">
+            <li>
+              <div class="circle">
+                <div class="soc-logo d-flex justify-content-center">
+                  <svg width="25" height="25" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h7v-7H8V9.525h2v-2.05c0-2.164 1.212-3.684 3.766-3.684l1.803.002v2.605h-1.197c-.994 0-1.372.746-1.372 1.438v1.69h2.568L15 12h-2v7h4c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2z" />
+                  </svg>
+                </div>
+              </div>
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <div class="circle d-flex justify-content-center">
+                <div class="soc-logo">
+                  <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 6h4v13H1V6zm2-5C1.8 1 1 2 1 3.1 1 4.1 1.8 5 3 5c1.3 0 2-.9 2-2s-.8-2-2-2zm11.6 5.2c-2.1 0-3.3 1.2-3.8 2h-.1l-.2-1.7H6.9c0 1.1.1 2.4.1 3.9V19h4v-7.1c0-.4 0-.7.1-1 .3-.7.8-1.6 1.9-1.6 1.4 0 2 1.2 2 2.8V19h4v-7.4c0-3.7-1.9-5.4-4.4-5.4z" />
+                  </svg>
+                </div>
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <div class="circle d-flex justify-content-center">
+                <div class="soc-logo">
+                  <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z" />
+                  </svg>
+                </div>
+              </div>
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <div class="circle d-flex justify-content-center">
+                <div class="soc-logo">
+                  <svg width="30" height="30" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M39.7 18.6s-.3-2.1-1.2-3c-1.1-1.2-2.4-1.2-3-1.3C31.3 14 25 14 25 14s-6.3 0-10.5.3c-.6.1-1.9.1-3 1.3-.9.9-1.2 3-1.2 3S10 21 10 23.4v2.2c0 2.4.3 4.9.3 4.9s.3 2.1 1.2 3c1.1 1.2 2.6 1.2 3.3 1.3 2.4.1 10.2.2 10.2.2s6.3 0 10.5-.3c.6-.1 1.9-.1 3-1.3.9-.9 1.2-3 1.2-3s.3-2.4.3-4.8v-2.2c0-2.4-.3-4.8-.3-4.8zm-17.8 9.8V20l8.1 4.2-8.1 4.2z" />
+                  </svg>
+                </div>
+              </div>
+            </li>
+          </a>
+
+        </ul>
+
+        <!-- <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div> -->
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+
+    // fade in
+
+    $(document).on("scroll", function () {
+      var pageTop = $(document).scrollTop()
+      var pageBottom = pageTop + $(window).height()
+      var tags = $(".fadein")
+
+      for (var i = 0; i < tags.length; i++) {
+        var tag = tags[i]
+
+        if ($(tag).offset().top < pageBottom) {
+          $(tag).addClass("visible")
+        } else {
+          $(tag).removeClass("visible")
+        }
+      }
+    })
+
+
+
+    //   $(document).on("scroll", function () {
+    //   var pageTop = $(document).scrollTop()
+    //   var pageBottom = pageTop + $(window).height()
+    //   var tags = $(".fadein")
+
+    //   for (var i = 0; i < tags.length; i++) {
+    //     var tag = tags[i]
+
+    //     if ($(tag).offset().top < pageBottom) {
+    //       $(tag).addClass("visible")
+    //     } else {
+    //       $(tag).removeClass("visible")
+    //     }
+    //   }
+    // })
+
+
+    // window.addEventListener("scroll", reveal);
+
+
+
+    // fade left
+
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", reveal);
+
+
+
+    // fade right
+    function revealr() {
+
+      var reveals = document.querySelectorAll(".revealr");
+
+
+
+      for (var i = 0; i < reveals.length; i++) {
+
+        var windowHeight = window.innerHeight;
+
+        var elementTop = reveals[i].getBoundingClientRect().top;
+
+        var elementVisible = 150;
+
+
+
+        if (elementTop < windowHeight - elementVisible) {
+
+          reveals[i].classList.add("active");
+
+        } else {
+
+          reveals[i].classList.remove("active");
+
+        }
+
+      }
+
+    }
+
+
+
+    window.addEventListener("scroll", revealr);
+
+
+
+
+
+
+  </script>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
